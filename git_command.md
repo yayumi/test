@@ -1,5 +1,8 @@
 # git_command
 
+git status -> git commit -a -> git push
+git pull -> git status -> git commit -> git push
+
 # commit 히스토리 확인
 git log --graph 
 
