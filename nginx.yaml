@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-jenkins
+  template:
+    metadata:
+      labels:
+        app: nginx-jenkins
+        run: web-jenkins
+    spec:
+      containers:
+        - name: nginx-jenkins
+          image: public.ecr.aws/z9d2n7e1/nginx:1.19.5
+          ports:
+            - name: http
+              containerPort: 8081
