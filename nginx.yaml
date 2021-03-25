@@ -14,8 +14,8 @@ spec:
         run: web-jenkins
     spec:
       containers:
-        - name: nginx-jenkins
+          name: nginx-jenkins
           image: public.ecr.aws/z9d2n7e1/nginx:1.19.5
           ports:
-            - name: http
+              name: http
               containerPort: 8081
