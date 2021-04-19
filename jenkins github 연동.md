@@ -10,3 +10,8 @@ https://jootc.com/p/201905122827
 2) 새로운 ITEM에서 소스코드 관리, git
 - ssh 주소 사용
 - private key 방식 인증 추가
+
+## workspace 경로
+```
+/var/lib/jenkins/workspace
+```
